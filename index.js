@@ -1,4 +1,9 @@
-document.getElementById("main").remove()
-const newHeader = document.getElementsByTagName("body")[0].appendChild(document.createElement("h1"))
-newHeader.setAttribute("id", "victory")
-newHeader.innerHTML = "ALYSSA is the champion"
+main.remove()
+
+let newHeader = document.createElement('h1')
+document.body.appendChild(newHeader)
+newHeader.classList.add("victory")
+
+newHeader.id = "victory"
+
+newHeader.innerHTML = "Alyssa is the champion"
